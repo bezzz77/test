@@ -1,0 +1,756 @@
+@charset "UTF-8";
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* line 8, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 18, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+/* Sections
+   @mixin ========================================================================= */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 33, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 41, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+article, aside, footer, header, nav, section, figcaption, figure, main {
+  display: block;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 50, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* Text-level semantics
+   @mixin ========================================================================= */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 64, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 74, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 84, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 95, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 103, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 107, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 118, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 127, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 136, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 144, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 153, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**Enable panning and pinch zoom gestures, but disable additional non-standard gestures such as double-tap to zoom. Disabling double-tap to zoom removes the need for browsers to delay the generation of click events when the user taps the screen. */
+/* line 168, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+a, area, button, input, label, select, textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 179, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 189, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 202, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 211, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 226, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 240, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 249, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 258, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 268, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* Scripting
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 280, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 288, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+template {
+  display: none;
+}
+
+/* Hidden
+   @mixin ========================================================================= */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 299, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+[hidden] {
+  display: none;
+}
+
+/* Reset
+   @mixin ========================================================================= */
+/* line 306, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+h1, h2, h3, h4, h5, h6, p, blockquote, em, img, i, dl, dt, ol, ul, li, video, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* line 313, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+div, input, textarea, select, button,
+h1, h2, h3, h4, h5, h6, a, span {
+  outline: none;
+}
+
+/* line 318, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+ul, ol {
+  list-style-type: none;
+}
+
+/* line 322, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+
+/* line 325, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 331, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/** to remove the rounded in IOS*/
+/* line 338, C:/Users/Коля/Desktop/test/sass/libs/normalize.sass */
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Black.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* line 1, C:/Users/Коля/Desktop/test/sass/partials/_grid.sass */
+.container-xl {
+  width: 100%;
+  padding: 0 50px;
+  position: relative;
+}
+
+/* line 6, C:/Users/Коля/Desktop/test/sass/partials/_grid.sass */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 13, C:/Users/Коля/Desktop/test/sass/partials/_grid.sass */
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* line 2, C:/Users/Коля/Desktop/test/sass/partials/_uikit.sass */
+.uikit__h1 {
+  color: black;
+}
+
+/* line 4, C:/Users/Коля/Desktop/test/sass/partials/_uikit.sass */
+.uikit__h2 {
+  color: white;
+}
+
+/* line 1, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.container {
+  width: 100%;
+  max-width: 1110px;
+}
+
+/* line 5, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.last-link {
+  position: absolute;
+  right: 0;
+}
+
+/* line 8, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.carouselsportforall {
+  position: relative;
+}
+
+/* line 10, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.description-slider {
+  position: absolute;
+  left: 95px;
+  top: 72px;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1280px) {
+  /* line 10, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider {
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  /* line 10, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider {
+    top: 40px;
+    left: 80px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 860px) {
+  /* line 10, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider {
+    top: 35px;
+    left: 60px;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 660px) {
+  /* line 10, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider {
+    top: 20px;
+    left: 50px;
+  }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 560px) {
+  /* line 10, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider {
+    top: 15px;
+    left: 40px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 380px) {
+  /* line 10, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider {
+    top: 0px;
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width: 380px) and (min-width: 320px) {
+  /* line 10, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider {
+    left: 25px;
+    top: 0;
+  }
+}
+
+/* line 34, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.description-slider h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1280px) {
+  /* line 34, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider h2 {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  /* line 34, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider h2 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 860px) {
+  /* line 34, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 660px) {
+  /* line 34, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider h2 {
+    font-size: 27px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 560px) {
+  /* line 34, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider h2 {
+    font-size: 25px;
+    padding-bottom: 8px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 380px) {
+  /* line 34, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider h2 {
+    font-size: 22px;
+    padding-bottom: 5px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 380px) and (min-width: 320px) {
+  /* line 34, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider h2 {
+    font-size: 20px;
+    height: 45px;
+  }
+}
+
+/* line 60, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.description-slider p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 60px;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1280px) {
+  /* line 60, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider p {
+    font-size: 17px;
+    padding-bottom: 55px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1024px) {
+  /* line 60, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider p {
+    font-size: 17px;
+    padding-bottom: 45px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 860px) {
+  /* line 60, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider p {
+    font-size: 16px;
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 660px) {
+  /* line 60, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider p {
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 560px) {
+  /* line 60, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider p {
+    font-size: 14px;
+    padding-bottom: 15px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 380px) {
+  /* line 60, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider p {
+    font-size: 12px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 380px) and (min-width: 320px) {
+  /* line 60, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider p {
+    font-size: 10px;
+    padding-bottom: 7px;
+  }
+}
+
+/* line 87, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.description-slider button {
+  width: 255px;
+  height: 50px;
+  background-color: #FF7200;
+  border: 0px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 860px) {
+  /* line 87, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider button {
+    width: 220px;
+    height: 45px;
+  }
+}
+
+@media only screen and (max-width: 860px) and (min-width: 660px) {
+  /* line 87, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider button {
+    width: 180px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 560px) {
+  /* line 87, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider button {
+    width: 170px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 380px) {
+  /* line 87, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider button {
+    width: 140px;
+    height: 30px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 380px) and (min-width: 320px) {
+  /* line 87, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .description-slider button {
+    width: 130px;
+    height: 27px;
+    font-size: 11px;
+  }
+}
+
+/* line 113, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.customNextBtn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  background-color: #FF7200;
+  border: 0;
+}
+
+/* line 121, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.customNextBtn img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 860px) and (min-width: 660px) {
+  /* line 113, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .customNextBtn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 560px) {
+  /* line 113, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .customNextBtn {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 380px) {
+  /* line 113, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .customNextBtn {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media only screen and (max-width: 380px) and (min-width: 320px) {
+  /* line 113, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .customNextBtn {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* line 135, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.customPrevBtn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  background-color: #FF7200;
+  border: 0;
+}
+
+/* line 143, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+.customPrevBtn img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 860px) and (min-width: 660px) {
+  /* line 135, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .customPrevBtn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 660px) and (min-width: 560px) {
+  /* line 135, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .customPrevBtn {
+    width: 30px;
+    height: 30px;
+    right: 30px;
+  }
+}
+
+@media only screen and (max-width: 560px) and (min-width: 380px) {
+  /* line 135, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .customPrevBtn {
+    width: 25px;
+    height: 25px;
+    right: 25px;
+  }
+}
+
+@media only screen and (max-width: 380px) and (min-width: 320px) {
+  /* line 135, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .customPrevBtn {
+    width: 20px;
+    height: 20px;
+    right: 20px;
+  }
+}
+
+/*# sourceMappingURL=../css/index.map */
