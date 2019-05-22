@@ -25,12 +25,13 @@ $(document).ready(function(){
       owl.trigger('prev.owl.carousel', [300]);
   })
 
-  // $('#navbarNav').on( "click", function() {
-  //     $('#navbarNav').css({
-  //       'display' : 'block',
-  //     });
-  //
-  //   });
+  $('#navbar-toggler-button').on( "click", function() {
+      $('#navbarNav').css({
+        'display' : 'flex',
+      });
+
+    });
+
 
   $('#navbarNav #close').on( "click", function() {
       $('#navbarNav').css({
