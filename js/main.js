@@ -14,7 +14,7 @@ $(document).ready(function(){
 
   var owl = $('.owl-carousel');
   owl.owlCarousel();
-  
+
   $('.customNextBtn').click(function() {
     owl.trigger('next.owl.carousel');
   })
@@ -25,4 +25,16 @@ $(document).ready(function(){
       owl.trigger('prev.owl.carousel', [300]);
   })
 
+  // $('#navbarNav').on( "click", function() {
+  //     $('#navbarNav').css({
+  //       'display' : 'block',
+  //     });
+  //
+  //   });
+
+  $('#navbarNav #close').on( "click", function() {
+      $('#navbarNav').css({
+        'display' : 'none',
+      });
+    });
 });
