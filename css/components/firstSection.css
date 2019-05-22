@@ -16,7 +16,14 @@ body {
   max-width: 1110px;
 }
 
-/* line 9, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+@media only screen and (max-width: 1000px) and (min-width: 320px) {
+  /* line 6, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .container {
+    padding: 0;
+  }
+}
+
+/* line 12, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .nav-link {
   font-family: Montserrat;
   font-style: normal;
@@ -26,18 +33,27 @@ body {
   color: #000;
 }
 
-/* line 16, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 19, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .last-link {
   position: absolute;
   right: 0;
+  display: flex;
+  align-items: center;
 }
 
-/* line 19, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+@media only screen and (max-width: 1000px) and (min-width: 320px) {
+  /* line 19, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  .last-link {
+    position: static;
+  }
+}
+
+/* line 26, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .carouselsportforall {
   position: relative;
 }
 
-/* line 21, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 28, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .description-slider {
   position: absolute;
   left: 95px;
@@ -45,14 +61,14 @@ body {
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1280px) {
-  /* line 21, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 28, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider {
     top: 60px;
   }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  /* line 21, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 28, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider {
     top: 40px;
     left: 80px;
@@ -60,7 +76,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 860px) {
-  /* line 21, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 28, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider {
     top: 35px;
     left: 60px;
@@ -68,7 +84,7 @@ body {
 }
 
 @media only screen and (max-width: 860px) and (min-width: 660px) {
-  /* line 21, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 28, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider {
     top: 20px;
     left: 50px;
@@ -76,7 +92,7 @@ body {
 }
 
 @media only screen and (max-width: 660px) and (min-width: 560px) {
-  /* line 21, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 28, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider {
     top: 15px;
     left: 40px;
@@ -84,7 +100,7 @@ body {
 }
 
 @media only screen and (max-width: 560px) and (min-width: 380px) {
-  /* line 21, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 28, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider {
     top: 0px;
     left: 30px;
@@ -92,14 +108,14 @@ body {
 }
 
 @media only screen and (max-width: 380px) and (min-width: 320px) {
-  /* line 21, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 28, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider {
     left: 25px;
     top: 0;
   }
 }
 
-/* line 45, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 52, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .description-slider h2 {
   font-style: normal;
   font-weight: 600;
@@ -109,28 +125,28 @@ body {
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1280px) {
-  /* line 45, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 52, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider h2 {
     font-size: 42px;
   }
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  /* line 45, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 52, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider h2 {
     font-size: 36px;
   }
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 860px) {
-  /* line 45, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 52, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider h2 {
     font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 860px) and (min-width: 660px) {
-  /* line 45, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 52, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider h2 {
     font-size: 27px;
     padding-bottom: 10px;
@@ -138,7 +154,7 @@ body {
 }
 
 @media only screen and (max-width: 660px) and (min-width: 560px) {
-  /* line 45, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 52, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider h2 {
     font-size: 25px;
     padding-bottom: 8px;
@@ -147,7 +163,7 @@ body {
 }
 
 @media only screen and (max-width: 560px) and (min-width: 380px) {
-  /* line 45, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 52, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider h2 {
     font-size: 22px;
     padding-bottom: 5px;
@@ -156,14 +172,14 @@ body {
 }
 
 @media only screen and (max-width: 380px) and (min-width: 320px) {
-  /* line 45, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 52, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider h2 {
     font-size: 20px;
     height: 45px;
   }
 }
 
-/* line 71, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 78, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .description-slider p {
   font-style: normal;
   font-weight: 500;
@@ -173,7 +189,7 @@ body {
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 1280px) {
-  /* line 71, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 78, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider p {
     font-size: 17px;
     padding-bottom: 55px;
@@ -181,7 +197,7 @@ body {
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 1024px) {
-  /* line 71, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 78, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider p {
     font-size: 17px;
     padding-bottom: 45px;
@@ -189,7 +205,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 860px) {
-  /* line 71, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 78, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider p {
     font-size: 16px;
     padding-bottom: 30px;
@@ -197,7 +213,7 @@ body {
 }
 
 @media only screen and (max-width: 860px) and (min-width: 660px) {
-  /* line 71, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 78, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider p {
     font-size: 15px;
     padding-bottom: 20px;
@@ -205,7 +221,7 @@ body {
 }
 
 @media only screen and (max-width: 660px) and (min-width: 560px) {
-  /* line 71, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 78, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider p {
     font-size: 14px;
     padding-bottom: 15px;
@@ -213,7 +229,7 @@ body {
 }
 
 @media only screen and (max-width: 560px) and (min-width: 380px) {
-  /* line 71, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 78, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider p {
     font-size: 12px;
     padding-bottom: 10px;
@@ -221,14 +237,14 @@ body {
 }
 
 @media only screen and (max-width: 380px) and (min-width: 320px) {
-  /* line 71, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 78, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider p {
     font-size: 10px;
     padding-bottom: 7px;
   }
 }
 
-/* line 98, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 105, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .description-slider button {
   width: 255px;
   height: 50px;
@@ -239,7 +255,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 860px) {
-  /* line 98, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 105, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider button {
     width: 220px;
     height: 45px;
@@ -247,7 +263,7 @@ body {
 }
 
 @media only screen and (max-width: 860px) and (min-width: 660px) {
-  /* line 98, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 105, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider button {
     width: 180px;
     height: 40px;
@@ -256,7 +272,7 @@ body {
 }
 
 @media only screen and (max-width: 660px) and (min-width: 560px) {
-  /* line 98, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 105, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider button {
     width: 170px;
     height: 35px;
@@ -265,7 +281,7 @@ body {
 }
 
 @media only screen and (max-width: 560px) and (min-width: 380px) {
-  /* line 98, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 105, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider button {
     width: 140px;
     height: 30px;
@@ -274,7 +290,7 @@ body {
 }
 
 @media only screen and (max-width: 380px) and (min-width: 320px) {
-  /* line 98, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 105, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .description-slider button {
     width: 130px;
     height: 27px;
@@ -282,7 +298,7 @@ body {
   }
 }
 
-/* line 124, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 131, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .customNextBtn {
   width: 40px;
   height: 40px;
@@ -293,14 +309,14 @@ body {
   border: 0;
 }
 
-/* line 132, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 139, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .customNextBtn img {
   width: 100%;
   display: block;
 }
 
 @media only screen and (max-width: 860px) and (min-width: 660px) {
-  /* line 124, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 131, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .customNextBtn {
     width: 35px;
     height: 35px;
@@ -308,7 +324,7 @@ body {
 }
 
 @media only screen and (max-width: 660px) and (min-width: 560px) {
-  /* line 124, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 131, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .customNextBtn {
     width: 30px;
     height: 30px;
@@ -316,7 +332,7 @@ body {
 }
 
 @media only screen and (max-width: 560px) and (min-width: 380px) {
-  /* line 124, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 131, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .customNextBtn {
     width: 25px;
     height: 25px;
@@ -324,14 +340,14 @@ body {
 }
 
 @media only screen and (max-width: 380px) and (min-width: 320px) {
-  /* line 124, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 131, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .customNextBtn {
     width: 20px;
     height: 20px;
   }
 }
 
-/* line 147, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 154, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .customPrevBtn {
   width: 40px;
   height: 40px;
@@ -342,14 +358,14 @@ body {
   border: 0;
 }
 
-/* line 155, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 162, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 .customPrevBtn img {
   width: 100%;
   display: block;
 }
 
 @media only screen and (max-width: 860px) and (min-width: 660px) {
-  /* line 147, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 154, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .customPrevBtn {
     width: 35px;
     height: 35px;
@@ -357,7 +373,7 @@ body {
 }
 
 @media only screen and (max-width: 660px) and (min-width: 560px) {
-  /* line 147, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 154, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .customPrevBtn {
     width: 30px;
     height: 30px;
@@ -366,7 +382,7 @@ body {
 }
 
 @media only screen and (max-width: 560px) and (min-width: 380px) {
-  /* line 147, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 154, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .customPrevBtn {
     width: 25px;
     height: 25px;
@@ -375,7 +391,7 @@ body {
 }
 
 @media only screen and (max-width: 380px) and (min-width: 320px) {
-  /* line 147, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+  /* line 154, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
   .customPrevBtn {
     width: 20px;
     height: 20px;
@@ -383,7 +399,7 @@ body {
   }
 }
 
-/* line 173, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
+/* line 180, C:/Users/Коля/Desktop/test/sass/components/firstSection.sass */
 button.owl-dot:focus {
   outline: none;
 }
